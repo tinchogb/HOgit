@@ -107,19 +107,25 @@ y listo! en nuestra cuenta de github ya tiene que estar subido. pueden ver el ne
 
 Luego también editamos este readme para agregar los comandos con los que hicimos el repositorio
 
+### Pasos seguidos luego de hacer el fork. Aclaro que ya cuento con mi configuración github localmente.
+```
+git clone git@github.com:tinchogb/HOgit.git
+```
 
+Miro todas las ramas
+```
+git branch -a
+```
+
+Comienzo a hacer cambios en el archivo README.md de master.
 ```
 vi README.md
 ...
 git add README.md
-git commit
+git commit -m <mensaje>
+git push -u origin master
 ```
 
-y el push
+Repito lo anterior para las otras ramas según lo leído en el README.md del repositorio original (upstream).
 
-```
-git push
-```
-=======
-Creamos un branch acerca de las charlas, y decimos que nos parecen buenísimas
->>>>>>> charlas
+Observación: Al hacer el merge de master con la rama charlas me surgió un conflicto que tuve que resolver.
