@@ -120,3 +120,6 @@ y el push
 ```
 git push
 ```
+=======
+Creamos un branch acerca de las charlas, y decimos que nos parecen buenísimas
+>>>>>>> charlas
